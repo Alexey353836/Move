@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+	<title>master_Move</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+	<div class="wrapper">
+<!-- myHeader -->
+<header class="header fixed">
+  <div class="container header__container">
+    <a href="#html" class="logo">
+      <img src="./images/dist/icons/logo-black.svg" alt="логотип" class="logo-black">
+      <img src="./images/dist/icons/logo-wight.svg" alt="логотип" class="logo-wight">
+    </a>
+    <nav class="header__nav">
+      <ul>
+        <li>
+          <a  class="header__nav-allcourses" href="#html">
+            <img src="./images/dist/icons/allcourses.svg" alt="Все курсы">
+            <p>Все курсы</p>
+          </a>
+        </li>
+        <li><a href="#html">Мероприятия</a></li>
+        <li><a href="#html">Базы знаний</a></li>
+        <li><a href="#html">Карьера</a></li>
+        <li> 
+          <a class="header__nav-city j__active j__show" href="#cities">
+            <img src="./images/dist/icons/find-city.svg" alt="Найти город">
+            <p id="nameCity">Черновцы</p>
+            <div class=" header__nav-find-city">
+              <img class="c__chevron-down"  src="./images/dist/icons/chevron-down.svg" alt="Стрелка вверх">
+              <img class="c__chevron-up" src="./images/dist/icons/chevron-up.svg" alt="Стрелка вниз">
+            </div>
+          </a>
+        </li>
+        <li><a href="#tel:0950000000">095 000 00 00</a></li>
+        <li>
+          <a  class="header__nav-enter" href="#html">
+            <img src="./images/dist/icons/enter.svg" alt="Войти">
+            <p>Войти</p>
+          </a>
+        </li> 
+      </ul>
+    </nav>
+    <!-- burger -->
+    <a href="#burger-menu" class="header__box-burger j__active j__show" title="button-pupup">
+      <div class="header__burger">
+        <span></span>
+      </div>
+    </a>
+  </div>
+</header>
+
+
+<!-- <div class="container">
+  <h1 class="lorem__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem vero suscipit ipsam provident corporis voluptatum quaerat voluptate mollitia! Debitis tempore beatae accusamus quos iusto quae! Esse rem molestias natus eveniet. Ipsa, incidunt. Esse, animi accusantium dolorem nostrum facilis necessitatibus provident iste porro perspiciatis quam cum fugit, quos aperiam natus impedit laborum, adipisci tenetur ut sunt dolore voluptas? Velit eos nemo veritatis hic consectetur cupiditate ratione pariatur, deleniti animi. Rerum delectus aliquam nobis pariatur qui quibusdam, officia id maxime repellat eligendi nostrum, temporibus fuga. Sequi magnam, porro eum quod consequatur repellendus hic necessitatibus in odit, repudiandae possimus a adipisci deleniti asperiores voluptas dolor eveniet totam reiciendis dolore quae. Facere libero fugiat at consequuntur dolorum impedit. Rerum numquam aspernatur similique inventore ex unde laudantium fugit, eius amet laboriosam provident modi delectus, atque esse quod vero animi, dolores hic! Consequuntur ab cupiditate eius. Perspiciatis impedit beatae, at fugiat iure neque. Quo voluptatem nihil provident eum quod amet voluptatibus placeat, earum necessitatibus laboriosam, quibusdam animi eaque ex in. Numquam illo ratione aut quisquam expedita quia sit excepturi totam alias in aspernatur, commodi delectus. Est ullam adipisci nulla reprehenderit unde nobis, molestiae ducimus animi cupiditate porro sequi, cum debitis voluptatum odio cumque natus necessitatibus perferendis?</h1>
+</div> -->
+
+<!-- hero -->
+<section class="hero">
+  <div class="hero__boxes">
+    <img src="./images/dist/icons/vector-1.svg" alt="" class="hero__vector-1">
+    <img src="./images/dist/icons/vector-2.svg" alt="" class="hero__vector-2">
+    <img src="./images/dist/icons/vector-3.png" alt="" class="hero__vector-3">
+    <img src="./images/dist/icons/vector-4.svg" alt="" class="hero__vector-4">
+    <img src="./images/dist/icons/vector-5.svg" alt="" class="hero__vector-5">
+    <img src="./images/dist/icons/vector-6.svg" alt="" class="hero__vector-6">
+    <img src="./images/dist/icons/vector-1.svg" alt="" class="hero__vector-7">
+    <img src="./images/dist/icons/vector-2.svg" alt="" class="hero__vector-8">
+    <img src="./images/dist/icons/vector-4.svg" alt="" class="hero__vector-9">
+    <div class="hero__box-1">
+    <picture>
+      <source srcset="./images/dist/pictures/main-photo-2.jpg" media="(max-width: 800px)">
+      <img class="hero__box-1-img-2" src="./images/dist/pictures/main-photo-1.jpg" alt="Главное фото">
+    </picture>  
+    </div>
+    <div class="hero__box-2 box-backgraund">
+      <h1 >Образовательная платформа <span>ход</span> Future Academy</h1>
+      <p>Актуальные знания для новичков и професионалов</p>
+    </div>
+  </div>
+</section>
+
+<!--profession-->
+<section class="profession">
+  <div class="container">
+    <div class="profession__container">
+      <div class="profession__box-1">
+        <div class="owl">
+          <div class="owl-text">
+            <p class="owl-question">Кем вы хотите стать?</p>
+            <p class="owl-message">Пора найти себя <br> и выбрать подходящий курс :)</p>
+            <p class="owl-message">Успехов!!!</p>
+          </div>
+          <img src="./images/dist/pictures/owl.png" alt="сова" class="owl-img">
+        </div>
+      </div>
+      <div class="profession__box-2">
+        <div class="profession__box-2-age">
+          <div class="age">
+            <img class="age__img" src="./images/dist/icons/children.svg" alt="дети">
+            <div class="age__text">
+              <p>Дети</p>
+              <span>8 - 14 лет</span>
+            </div>
+          </div>
+          <div class="age">
+            <img class="age__img" src="./images/dist/icons/teenagers.svg" alt="Подростки">
+            <div class="age__text">
+              <p>Подростки</p>
+              <span>14 - 18 лет</span>
+            </div>
+          </div>
+          <div class="age">
+            <img class="age__img" src="./images/dist/icons/adults.svg" alt="Взрослые">
+            <div class="age__text">
+              <p>Взрослые</p>
+              <span>18 - ... </span>
+            </div>
+          </div>
+        </div>
+        <div class="profession__box-2-category">
+          <a class="btn-category" href="#html">Робототехника</a>
+          <a class="btn-category" href="#html">Создание игр</a>
+          <a class="btn-category" href="#html">Web-разработка</a>
+          <a class="btn-category" href="#html">Мультимедиа</a>
+          <a class="btn-category" href="#html">3D-моделирование и дизайн</a>
+          <a class="btn-category" href="#html">Шахматы</a>
+          <a class="btn-category" href="#html">Английский язык</a>
+          <a class="btn-category" href="#html">Блогинг</a>
+          <a class="btn-category" href="#html">Soft skills</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- video -->
+<section class="video">
+  <div class="container">
+    <div class="video__container">
+      <video class="video__player-main" controls preload="metadata" poster="./images/dist/pictures/photo-video-1.jpg">
+        <source src="images/dist/video/mov_bbb.webm" type="video/webm">
+        <source src="./images/dist/video/mov_bbb.mp4" type="video/mp4">
+        К сожалению, ваш браузер не поддерживает встроенные видео.
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- howmany -->
+<section class="howmany">
+  <div class="container">
+    <div class="howmany__container">
+      <p class="howmany__title">Актуальные знания от признанных экспертов рынка для новичков и практикующих специалистов.</p>
+      <div class="howmany__items">
+        <div class="howmany__item">
+          <p class="howmany__namber">18</p>
+          <p class="howmany__text">Курсов</p>
+        </div>
+        <div class="howmany__item">
+          <p class="howmany__namber">12</p>
+          <p class="howmany__text">Ведущих преподавателей</p>
+        </div>
+        <div class="howmany__item">
+          <p class="howmany__namber">1030</p>
+          <p class="howmany__text">Выпускников</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- popups -->
+
+<!-- Выберите свой город -->
+<div id="cities" class="popup">
+  <div class="black j__close"></div>
+  <div class="container">
+    <div class="popup__container">
+    <div class="popup__content popup__content-cities">
+      <img src="./images/dist/icons/close.svg" alt="Закрыть" class="img__close j__close">
+      <h3 class="popup__cities-title">Выберите свой город</h3>
+      <ul class="cities">
+        <li class="g__cities-1">
+          <ul class="city">
+            <li><a href="#beregovo" class="J__a j__city" data-title="	Берегово">Берегово</a></li>
+            <li><a href="#dnepr" class="J__a j__city" data-title="Днепр">Днепр</a></li>
+            <li><a href="#zaporozhye" class="J__a j__city" data-title="	Запорожье">	Запорожье</a></li>
+            <li><a href="#ivano-frankivsk" class="J__a j__city" data-title="	Ивано-Франковск">	Ивано-Франковск</a></li>
+            <li><a href="#kyiv" class="J__a j__city" data-title="	Киев">	Киев</a></li>
+          </ul>
+        </li>
+        <li class="g__cities-2">
+          <ul class="city">
+            <li><a href="#kupyansk" class="J__a j__city" data-title="Купянск">Купянск</a></li>
+            <li><a href="#lisichansk"" class="J__a j__city" data-title="	Лисичанск">Лисичанск</a></li>
+            <li><a href="#lviv" class="J__a j__city" data-title="Львов">Львов</a></li>
+            <li><a href="#lyubotin" class="J__a j__city" data-title="Люботин">Люботин</a></li>
+            <li><a href="#merefa" class="J__a j__city" data-title="Мерефа">Мерефа</a></li>
+          </ul>
+        </li>
+        <li class="g__cities-3">
+          <ul class="city">
+            <li><a href="#mirgorod" class="J__a j__city" data-title="	Миргород">Миргород</a></li>
+            <li><a href="#molochansk" class="J__a j__city" data-title="Молочанск">Молочанск</a></li>
+            <li><a href="#mukachevo" class="J__a j__city" data-title="	Мукачево">Мукачево</a></li>
+            <li><a href="#nikolaev" class="J__a j__city" data-title="Николаев">Николаев</a></li>
+            <li><a href="#nikopol" class="J__a j__city" data-title="Никополь">Никополь</a></li>
+          </ul>
+        </li>
+        <li class="g__cities-4">
+          <ul class="city">
+            <li><a href="#new-kakhovka" class="J__a j__city" data-title="	Новая Каховка">Новая Каховка</a></li>
+            <li><a href="#obukhov" class="J__a j__city" data-title="Обухов">Обухов</a></li>
+            <li><a href="#odessa" class="J__a j__city" data-title="Одесса">Одесса</a></li>
+            <li><a href="#orekhov" class="J__a j__city" data-title="Орехов">Орехов</a></li>
+            <li><a href="#poltava" class="J__a j__city" data-title="Полтава">Полтава</a></li>
+          </ul>
+        </li>
+        <li class="g__cities-5">
+          <ul class="city">
+            <li><a href="#sumy" class="J__a j__city" data-title="Сумы">Сумы</a></li>
+            <li><a href="#ternopil" class="J__a j__city" data-title="Тернополь">Тернополь</a></li>
+            <li><a href="#uzhgorod" class="J__a j__city" data-title="Ужгород">Ужгород</a></li>
+            <li><a href="#kharkiv" class="J__a j__city" data-title="Харьков">Харьков</a></li>
+            <li><a href="#chernivtsi" class="J__a j__city" data-title="Черновцы">Черновцы</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- Burger-menu -->
+<div id="burger-menu" class="popup">
+  <div class="black j__close"></div>
+  <div class="">
+    <div class="popup__container">
+      <div class="popup__content popup__contant-burger">
+
+        <a  class="popup__contant-burger-allcourses" href="#html">
+          <img src="./images/dist/icons/allcourses.svg" alt="Все курсы">
+          <p>Все курсы</p>
+        </a>
+
+        <ul>
+          <li><a href="#html">Об академии</a></li>
+          <li><a href="#html">Мероприятия</a></li>
+          <li><a href="#html">Новости</a></li>
+          <li><a href="#html">Базы знаний</a></li>
+          <li><a href="#html">Карьера</a></li>
+          <li><a href="#html">Контакты</a></li>
+        </ul>
+
+        <a class="popup__contant-burger-cities" href="#html">
+          <img src="./images/dist/icons/find-city.svg" alt="Найти город">
+          <p id="nameCity-popup">Черновцы</p>
+          <div class="popup__contant-burger-chevrons-city active ">
+            <img class="c__chevron-down-burger"  src="./images/dist/icons/chevron-down.svg" alt="Стрелка вверх">
+            <img class="c__chevron-up-burger" src="./images/dist/icons/chevron-up.svg" alt="Стрелка вниз">
+          </div>
+        </a>
+
+        <!-- Meню Выбрать город -->
+        <div class="popup__contant-burger-find-city">
+          <ul>
+            <li><a class="box-choose J__a" data-title="	Берегово"  href="#html"><div id="beregovo" class="choose"></div><p>Берегово</p></a></li>
+            <li><a class="box-choose J__a" data-title="Днепр" href="#html"><div id="dnepr" class="choose"></div><p>Днепр</p></a></li>
+            <li><a class="box-choose J__a" data-title="Запорожье" href="#html"><div id="zaporozhye" class="choose"></div><p>Запорожье</p></a></li>
+            <li><a class="box-choose J__a" data-title="Ивано-Франковск" href="#html"><div id="ivano-frankivsk" class="choose"></div><p>Ивано-Франковск</p></a></li>
+            <li><a class="box-choose J__a" data-title="Киев" href="#html"><div id="kyiv" class="choose"></div><p>Киев</p></a></li>
+            <li><a class="box-choose J__a" data-title="Купянск" href="#html"><div id="kupyansk" class="choose"></div><p>Купянск</p></a></li>
+            <li><a class="box-choose J__a" data-title="Лисичанск" href="#html"><div id="lisichansk" class="choose"></div><p>Лисичанск</p></a></li>
+            <li><a class="box-choose J__a" data-title="Львов" href="#html"><div id="lviv" class="choose"></div><p>Львов</p></a></li>
+            <li><a class="box-choose J__a" data-title="Люботин" href="#html"><div id="lyubotin" class="choose"></div><p>Люботин</p></a></li>
+            <li><a class="box-choose J__a" data-title="Мерефа" href="#html"><div id="merefa" class="choose"></div><p>Мерефа</p></a></li>
+            <li><a class="box-choose J__a" data-title="Миргород" href="#html"><div id="mirgorod" class="choose"></div><p>Миргород</p></a></li>
+            <li><a class="box-choose J__a" data-title="Молочанск" href="#html"><div id="molochansk" class="choose"></div><p>Молочанск</p></a></li>
+            <li><a class="box-choose J__a" data-title="Мукачево" href="#html"><div id="mukachevo" class="choose"></div><p>Мукачево</p></a></li>
+            <li><a class="box-choose J__a" data-title="Николаев" href="#html"><div id="nikolaev" class="choose"></div><p>Николаев</p></a></li>
+            <li><a class="box-choose J__a" data-title="Никополь" href="#html"><div id="nikopol" class="choose"></div><p>Никополь</p></a></li>
+            <li><a class="box-choose J__a" data-title="Новая Каховка" href="#html"><div id="new-kakhovka" class="choose"></div><p>Новая Каховка</p></a></li>
+            <li><a class="box-choose J__a" data-title="Обухов" href="#html"><div id="obukhov" class="choose"></div><p>Обухов</p></a></li>
+            <li><a class="box-choose J__a" data-title="Одесса" href="#html"><div id="odessa" class="choose"></div><p>Одесса</p></a></li>
+            <li><a class="box-choose J__a" data-title="Орехов" href="#html"><div id="orekhov" class="choose"></div><p>Орехов</p></a></li>
+            <li><a class="box-choose J__a" data-title="Полтава" href="#html"><div id="poltava" class="choose"></div><p>Полтава</p></a></li>
+            <li><a class="box-choose J__a" data-title="Сумы" href="#html"><div id="sumy" class="choose"></div><p>Сумы</p></a></li>
+            <li><a class="box-choose J__a" data-title="Тернополь" href="#html"><div id="ternopil" class="choose"></div><p>Тернополь</p></a></li>
+            <li><a class="box-choose J__a" data-title="Ужгород" href="#html"><div id="uzhgorod" class="choose"></div><p>Ужгород</p></a></li>
+            <li><a class="box-choose J__a" data-title="Харьков" href="#html"><div id="kharkiv" class="choose"></div><p>Харьков</p></a></li>
+            <li><a class="box-choose J__a" data-title="Черновцы" href="#html"><div id="chernivtsi" class="choose active"></div><p>Черновцы</p></a></li>
+          </ul>
+        </div>
+
+        <a  class="popup__contant-burger-enter" href="#html">
+          <img src="./images/dist/icons/enter.svg" alt="Войти">
+          <p>Войти</p>
+        </a>
+
+        <ul>
+          <li class="burger-menu-tel"><a href="#tel:0950000000">095 000 00 00</a></li>
+          <li><span>г. Черновцы, ул. Главная, д.127</span></li>
+          <li class="burger-menu-gmail"><a href="mailto:FutureAcademy@gmail.com">FutureAcademy@gmail.com</a></li>
+        </ul>
+
+        <div class="messengers">
+          <img src="images/src/icons/inst.svg" alt="Инстограм">
+          <img src="images/src/icons/f.svg" alt="Фэйсбук">
+          <img src="images/src/icons/Y.svg" alt="Ютуб">
+          <img src="images/src/icons/t.svg" alt="Телеграм">
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/app.min.js"></script>
+
+</body>
+</html>
+
+
