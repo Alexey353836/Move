@@ -106,7 +106,34 @@
     <div class="delimiter"></div>
     <div class="all-courses__container">
       <div class="all-courses-box-1">
-        <div class="all-courses__filters">
+        <!-- radio -->
+        <form class="all-courses__filters-box" action="#html" method="get">
+          <div class="all-courses__filter-box">
+            <p class="all-courses__filter-box-title">Уровень сложности</p>
+            <p class="all-courses__filter-box-subtitle">Новичок</p>
+            <div class="all-courses__filter-box-radios">
+              <div class="box-radio"><input type="radio" name="radio-1" value="1" id="" checked><p>Пользователь</p></div> 
+              <div class="box-radio"><input type="radio" name="radio-1" value="2" id=""><p>Профессионал</p></div> 
+              <div class="box-radio"><input type="radio" name="radio-1" value="3" id=""><p>Читер</p></div> 
+            </div> 
+          </div>
+          <div class="all-courses__filter-box">
+            <p class="all-courses__filter-box-title">Тип обучения</p>
+            <p class="all-courses__filter-box-subtitle">Любой</p>
+            <div class="all-courses__filter-box-radios">
+              <div class="box-radio"><input type="radio" name="radio-2" value="1" id="" checked><p>Профессия</p></div> 
+              <div class="box-radio"><input type="radio" name="radio-2" value="2" id=""><p>Курс</p></div>
+            </div> 
+          </div>
+          <div class="all-courses__filter-box">
+            <p class="all-courses__filter-box-title">Длительность</p>
+            <p class="all-courses__filter-box-subtitle">от 1 до 24 месяцев</p>
+          </div>
+          <input class="box-radio-btn" type="submit" value="Применить">
+         </form>
+
+
+        <!-- <div class="all-courses__filters">
           <div>Уровень сложности</div>
           <span>Новичок</span>
           <div class="all-courses__filters-box">
@@ -123,8 +150,8 @@
               <p>Пользователь</p>
             </a>
           </div>
-        </div>
-        <div class="all-courses__filters">
+        </div> -->
+        <!-- <div class="all-courses__filters">
           <div>Тип обучения</div>
           <span>Любой</span>
           <div class="all-courses__filters-box">
@@ -137,11 +164,11 @@
               <p>Курс</p>
             </a>
           </div>
-        </div>
-        <div class="all-courses__filters">
+        </div> -->
+        <!-- <div class="all-courses__filters">
           <div>Длительность</div>
           <span>от 1 до 24 месяцев</span>
-        </div>
+        </div> -->
       </div>
       <div class="all-courses-box-2">
         <div>Направление</div>
