@@ -685,45 +685,125 @@
 
         <!-- Meню Выбрать город -->
         <div class="popup__contant-burger-find-city">
-          <ul>
-            <li><a class="box-choose J__a" data-title="	Берегово"  href="#html"><div id="beregovo" class="choose"></div><p>Берегово</p></a></li>
-            <li><a class="box-choose J__a" data-title="Днепр" href="#html"><div id="dnepr" class="choose"></div><p>Днепр</p></a></li>
-            <li><a class="box-choose J__a" data-title="Запорожье" href="#html"><div id="zaporozhye" class="choose"></div><p>Запорожье</p></a></li>
-            <li><a class="box-choose J__a" data-title="Ивано-Франковск" href="#html"><div id="ivano-frankivsk" class="choose"></div><p>Ивано-Франковск</p></a></li>
-            <li><a class="box-choose J__a" data-title="Киев" href="#html"><div id="kyiv" class="choose"></div><p>Киев</p></a></li>
-            <li><a class="box-choose J__a" data-title="Купянск" href="#html"><div id="kupyansk" class="choose"></div><p>Купянск</p></a></li>
-            <li><a class="box-choose J__a" data-title="Лисичанск" href="#html"><div id="lisichansk" class="choose"></div><p>Лисичанск</p></a></li>
-            <li><a class="box-choose J__a" data-title="Львов" href="#html"><div id="lviv" class="choose"></div><p>Львов</p></a></li>
-            <li><a class="box-choose J__a" data-title="Люботин" href="#html"><div id="lyubotin" class="choose"></div><p>Люботин</p></a></li>
-            <li><a class="box-choose J__a" data-title="Мерефа" href="#html"><div id="merefa" class="choose"></div><p>Мерефа</p></a></li>
-            <li><a class="box-choose J__a" data-title="Миргород" href="#html"><div id="mirgorod" class="choose"></div><p>Миргород</p></a></li>
-            <li><a class="box-choose J__a" data-title="Молочанск" href="#html"><div id="molochansk" class="choose"></div><p>Молочанск</p></a></li>
-            <li><a class="box-choose J__a" data-title="Мукачево" href="#html"><div id="mukachevo" class="choose"></div><p>Мукачево</p></a></li>
-            <li><a class="box-choose J__a" data-title="Николаев" href="#html"><div id="nikolaev" class="choose"></div><p>Николаев</p></a></li>
-            <li><a class="box-choose J__a" data-title="Никополь" href="#html"><div id="nikopol" class="choose"></div><p>Никополь</p></a></li>
-            <li><a class="box-choose J__a" data-title="Новая Каховка" href="#html"><div id="new-kakhovka" class="choose"></div><p>Новая Каховка</p></a></li>
-            <li><a class="box-choose J__a" data-title="Обухов" href="#html"><div id="obukhov" class="choose"></div><p>Обухов</p></a></li>
-            <li><a class="box-choose J__a" data-title="Одесса" href="#html"><div id="odessa" class="choose"></div><p>Одесса</p></a></li>
-            <li><a class="box-choose J__a" data-title="Орехов" href="#html"><div id="orekhov" class="choose"></div><p>Орехов</p></a></li>
-            <li><a class="box-choose J__a" data-title="Полтава" href="#html"><div id="poltava" class="choose"></div><p>Полтава</p></a></li>
-            <li><a class="box-choose J__a" data-title="Сумы" href="#html"><div id="sumy" class="choose"></div><p>Сумы</p></a></li>
-            <li><a class="box-choose J__a" data-title="Тернополь" href="#html"><div id="ternopil" class="choose"></div><p>Тернополь</p></a></li>
-            <li><a class="box-choose J__a" data-title="Ужгород" href="#html"><div id="uzhgorod" class="choose"></div><p>Ужгород</p></a></li>
-            <li><a class="box-choose J__a" data-title="Харьков" href="#html"><div id="kharkiv" class="choose"></div><p>Харьков</p></a></li>
-            <li><a class="box-choose J__a" data-title="Черновцы" href="#html"><div id="chernivtsi" class="choose active"></div><p>Черновцы</p></a></li>
-          </ul>
+          <form class="form-find-city" action="#html" method="get">
+            <div class="radio-box J__a" data-title="	Берегово">
+              <input class="radio__input " type="radio" name="city"  id="beregovo">
+              <label class="radio__label" for="beregovo">Берегово</label>
+            </div>
+            <div class="radio-box J__a" data-title="Днепр">
+              <input class="radio__input" type="radio" name="city" id="dnepr">
+              <label class="radio__label" for="dnepr">Днепр</label>
+            </div>
+            <div class="radio-box J__a" data-title="Запорожье"">
+              <input class="radio__input" type="radio" name="city" id="zaporozhye">
+              <label class="radio__label" for="zaporozhye">Запорожье"</label>
+            </div>
+            <div class="radio-box J__a" data-title="Ивано-Франковск">
+              <input class="radio__input" type="radio" name="city" id="ivano-frankivsk">
+              <label class="radio__label" for="ivano-frankivsk">Ивано-Франковск</label>
+            </div>
+            <div class="radio-box J__a" data-title="Киев">
+              <input class="radio__input" type="radio" name="city" id="kyiv">
+              <label class="radio__label" for="kyiv">Киев</label>
+            </div>
+            <div class="radio-box J__a" data-title="Купянск">
+              <input class="radio__input" type="radio" name="city" id="kupyansk">
+              <label class="radio__label" for="kupyansk">Купянск</label>
+            </div>
+            <div class="radio-box J__a" data-title="Лисичанск">
+              <input class="radio__input" type="radio" name="city" id="lisichansk">
+              <label class="radio__label" for="lisichansk">Лисичанск</label>
+            </div>
+            <div class="radio-box J__a" data-title="Львов">
+              <input class="radio__input" type="radio" name="city" id="lviv">
+              <label class="radio__label" for="lviv">Львов</label>
+            </div>
+            <div class="radio-box J__a" data-title="Люботин">
+              <input class="radio__input" type="radio" name="city" id="lyubotin">
+              <label class="radio__label" for="lyubotin">Люботин</label>
+            </div>
+            <div class="radio-box J__a" data-title="Мерефа">
+              <input class="radio__input" type="radio" name="city" id="merefa">
+              <label class="radio__label" for="merefa">Мерефа</label>
+            </div>
+            <div class="radio-box J__a" data-title="Миргород">
+              <input class="radio__input" type="radio" name="city" id="mirgorod">
+              <label class="radio__label" for="mirgorod">Миргород</label>
+            </div>
+            <div class="radio-box J__a" data-title="Молочанск">
+              <input class="radio__input" type="radio" name="city" id="molochansk">
+              <label class="radio__label" for="molochansk">Молочанск</label>
+            </div>
+            <div class="radio-box J__a" data-title="Мукачево">
+              <input class="radio__input" type="radio" name="city" id="mukachevo">
+              <label class="radio__label" for="mukachevo">Мукачево</label>
+            </div>
+            <div class="radio-box J__a" data-title="Николаев">
+              <input class="radio__input" type="radio" name="city" id="nikolaev">
+              <label class="radio__label" for="nikolaev">Николаев</label>
+            </div>
+            <div class="radio-box J__a" data-title="Никополь">
+              <input class="radio__input" type="radio" name="city" id="nikopol">
+              <label class="radio__label" for="nikopol">Никополь</label>
+            </div>
+            <div class="radio-box J__a" data-title="Новая Каховка">
+              <input class="radio__input" type="radio" name="city" id="new-kakhovka">
+              <label class="radio__label" for="new-kakhovka">Новая Каховка</label>
+            </div>
+            <div class="radio-box J__a" data-title="Обухов">
+              <input class="radio__input" type="radio" name="city" id="obukhov">
+              <label class="radio__label" for="obukhov">Обухов</label>
+            </div>
+            <div class="radio-box J__a" data-title="Одесса">
+              <input class="radio__input" type="radio" name="city" id="odessa">
+              <label class="radio__label" for="odessa">Одесса</label>
+            </div>
+            <div class="radio-box J__a" data-title="Орехов">
+              <input class="radio__input" type="radio" name="city" id="orekhov">
+              <label class="radio__label" for="orekhov">Орехов</label>
+            </div>
+            <div class="radio-box J__a" data-title="Полтава">
+              <input class="radio__input" type="radio" name="city" id="poltava">
+              <label class="radio__label" for="poltava">Полтава</label>
+            </div>
+            <div class="radio-box J__a" data-title="Сумы"">
+              <input class="radio__input" type="radio" name="city" id="sumy"">
+              <label class="radio__label" for="sumy"">Сумы"</label>
+            </div>
+            <div class="radio-box J__a" data-title="Тернополь">
+              <input class="radio__input" type="radio" name="city" id="ternopil">
+              <label class="radio__label" for="ternopil">Тернополь</label>
+            </div>
+            <div class="radio-box J__a" data-title="Ужгород"">
+              <input class="radio__input" type="radio" name="city" id="uzhgorod">
+              <label class="radio__label" for="uzhgorod">Ужгород"</label>
+            </div>
+            <div class="radio-box J__a" data-title="Харьков">
+              <input class="radio__input" type="radio" name="city" id="kharkiv">
+              <label class="radio__label" for="kharkiv">Харьков</label>
+            </div>
+            <div class="radio-box J__a" data-title="Черновцы">
+              <input class="radio__input" type="radio" name="city" id="chernivtsi" checked>
+              <label class="radio__label" for="chernivtsi">Черновцы</label>
+            </div>
+          </form>
         </div>
+         <!-- Meню Выбрать город end -->
 
+        <!-- Войти -->
         <a  class="popup__contant-burger-enter" href="#html">
           <img src="./images/dist/icons/enter.svg" alt="Войти">
           <p>Войти</p>
         </a>
+        <!-- Войти end -->
 
+        <!-- Контакты -->
         <ul>
           <li class="burger-menu-tel"><a href="#tel:0950000000">095 000 00 00</a></li>
           <li><span>г. Черновцы, ул. Главная, д.127</span></li>
           <li class="burger-menu-gmail"><a href="mailto:FutureAcademy@gmail.com">FutureAcademy@gmail.com</a></li>
         </ul>
+        <!-- Контакты end -->
 
         <div class="messengers">
           <img src="images/dist/icons/inst.svg" alt="Инстограм">
@@ -736,6 +816,64 @@
     </div>
   </div>
 </div>
+
+<!-- popup-filters -->
+ <div id="popup-filters" class="popup popup-filters">
+  <div class="black j__close"></div>
+  <div class="popup__container">
+    <div class="popup__content">
+      <div class="popup-filters__content">
+        <div class="popup-filters__header">
+          <div class="popup-filters__logo">
+            <img src="./images/dist/icons/filters.svg" alt="Фильтры">
+            <p>Фильтры</p>
+          </div>
+          <div class="popup-filters__btn-close j__close"></div>
+        </div>
+        <!-- radio -->
+        <form class="popup-filters__form" action="#html" method="get">
+          <div>
+            <p class="popup-filters__form-title">Уровень сложности</p>
+            <p class="popup-filters__form-subtitle">Новичок</p>
+            <div class="popup-filters__boxes-radios">
+              <div class="radio-box">
+                <input class="radio__input" type="radio" name="filter-1" id="radio-1f" checked>
+                <label class="radio__label" for="radio-1f">Пользователь</label>
+              </div>
+              <div class="radio-box">
+                <input class="radio__input" type="radio" name="filter-1" id="radio-2f">
+                <label class="radio__label" for="radio-2f">Профессионал</label>
+              </div>
+              <div class="radio-box">
+                <input class="radio__input" type="radio" name="filter-1" id="radio-3f">
+                <label class="radio__label" for="radio-3f">Читер</label>
+              </div>
+            </div> 
+          </div>
+          <div class="all-courses__filter-box">
+            <p class="all-courses__filter-box-title">Тип обучения</p>
+            <p class="all-courses__filter-box-subtitle">Любой</p>
+            <div class="all-courses__filter-box-radios">
+              <div class="radio-box">
+                <input class="radio__input" type="radio" name="filter-2" id="radio-4f" checked>
+                <label class="radio__label" for="radio-4f">Профессия</label>
+              </div>
+              <div class="radio-box">
+                <input class="radio__input" type="radio" name="filter-2" id="radio-5f">
+                <label class="radio__label" for="radio-5f">Курс</label>
+              </div>
+            </div> 
+          </div>
+          <div class="all-courses__filter-box">
+            <p class="all-courses__filter-box-title">Длительность</p>
+            <p class="all-courses__filter-box-subtitle">от 1 до 24 месяцев</p>
+          </div>
+          <input class="popup-filters__btn j__close" type="submit" value="Применить">
+        </form>
+      </div>
+    </div>
+  </div>  
+ </div>
   </div>
   <!-- wrapper end -->
 
